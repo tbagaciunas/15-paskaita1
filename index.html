@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs project</title>
+    <link rel="stylesheet" href="/app/css/style.css">
+</head>
+<body>
+    <!-- <h1>Click the Tab</h1>
+    <div class="buttons">
+        <button onclick="changeHeader('Pirmas')">Pirmas</button>
+        <button onclick="changeHeader('Antras')">Antras</button>
+        <button onclick="changeHeader('Trečias')">Trečias</button>
+    </div>
+    <script>
+        function changeHeader(text){
+            var h1 = document.querySelector("h1")
+            h1.innerText = text
+        }
+    </script> -->
+
+    <h1>Mėgstamiausios šalys</h1>
+    <div class="buttons">
+        <button onclick="showTab(event, 'pirmas')" class="active">Islandija</button>
+        <button onclick="showTab(event, 'antras')">Norvegija</button>
+        <button onclick="showTab(event, 'trecias')">Farerai</button>
+    </div>
+
+    <div class="tabs">
+        <div id="pirmas" class="tab block">
+            
+            <img src="https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80.jpg" alt="dark1" >
+            <p>Islandija (isl. Ísland) – Šiaurės šalims priklausanti valstybė, įsikūrusi to paties pavadinimo saloje, esančioje Atlanto vandenyno šiaurinėje dalyje, 300 km į rytus nuo Grenlandijos ir 1000 km į vakarus nuo Norvegijos. 103 000 km² ploto valstybėje gyvena 321 857 gyventojai – Islandija šiuo atžvilgiu rečiausiai apgyvendinta valstybė Europoje. Reikjavikas yra šiauriausiai įsikūrusi valstybės sostinė, jos zonoje gyvena du trečdaliai visų gyventojų. Islandijos, esančios visai šalia Šiaurės poliaračio, klimatas pakankamai švelnus dėl ją šildančios šiltosios Golfo srovės..</p>
+        </div>
+
+        <div id="antras" class="tab">
+            <img src="https://images.unsplash.com/photo-1518124880777-cf8c82231ffb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=932&q=80" alt="dark2">
+            <p>Norvegija (norv. Norge/Noreg), oficialiai Norvegijos Karalystė (norv. Kongeriket Norge/Noreg) – Šiaurės šalis vakarinėje Skandinavijos pusiasalio dalyje. Valstybei priklauso arba ji administruoja Svalbardą, Lokių salą, Jan Majeną, Buvę, Petro I salą ir Karalienės Modos Žemę. Europinė šalies dalis ribojasi su Švedija, Suomija bei Rusija, taip pat turi jūrinę sieną su Danija ir Jungtine Karalyste. Šalies krantus skalauja Barenso, Šiaurės, Norvegų jūros. Ilgoje Atlanto vandenyno pakrantėje išsidėstę žymieji fjordai.</p>
+        </div>
+
+        <div id="trecias" class="tab">
+            <img src="https://images.unsplash.com/photo-1517751243320-0cc45ec82da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="dark3">
+            <p>Farerai (far. Føroyar, dan. Færøerne) arba Farerų salos – salų grupė šiaurės Atlanto vandenyne, tarp Škotijos ir Islandijos, tarp Atlanto vandenyno ir Norvegijos jūros. Autonominis Danijos Karalystės regionas. Administracinis centras – Torshaunas. 18 Farerų salų buvo atrastos Viduramžiais. Visos salos, išskyrus Mažąjį Duimuną, yra apgyvendintos.Klimatas vidutinių platumų; jūrinis. Didelę įtaką klimatui daro šiltoji Šiaurės Atlanto srovė. Vidutinė sausio mėnesio temperatūra yra 3 °C, o liepos 10 °C. Per metus iškrinta apie 1400 mm kritulių. Dangus beveik visada apsiniaukęs; vėjuota. Farerai – dažniausiai rūkų dengiama Europos vieta.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
